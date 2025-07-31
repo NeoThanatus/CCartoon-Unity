@@ -61,8 +61,13 @@ public class PlayerMoviment : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(bullet, fire.transform.position, fire.transform.rotation);
+            anim.SetTrigger("Shooting");
         }
+    }
+
+    void OnShoot()
+    {
+        Instantiate(bullet, fire.transform.position, fire.transform.rotation);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
