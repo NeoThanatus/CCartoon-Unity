@@ -11,6 +11,7 @@ public class PlayerMoviment : MonoBehaviour
     public GameObject bullet;
     public GameObject fire;
     // Start is called before the first frame update
+    // vidaText = vida.toString();""
     void Start()
     {
         myrb = gameObject.GetComponent<Rigidbody2D>();
